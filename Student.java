@@ -19,4 +19,67 @@ public class Student {
         this.studentName = "";
     }
 
+    // Value Constructor
+    public Student(int studentID, int gradeLevel, double GPA, String studentName) {
+        this.studentID = studentID;
+        this.gradeLevel = gradeLevel;
+        this.gradePointAvg = GPA;
+        this.studentName = studentName;
+    }
 
+    public Student(int studentID, String studentName) {
+        this.studentID =
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public static void main(String[] args) {
+        Student student0 = new Student();
+        Student student1 = new Student(12345678, 11, 0.57 "Dr. Strange");
+
+        System.out.println("Hello there!");
+        threeline();
+        System.out.println("General Kenobi");
+        calcGPA();
+    }
