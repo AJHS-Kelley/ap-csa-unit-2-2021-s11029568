@@ -68,11 +68,35 @@ public class Student {
 
 
 
+    public static void threeLine() {
+        newLine();
+        newLine();
+        newLine();
+    }
 
 
 
+    //Parameters and arguments
+    public static void assignlunch(int gradeLevel) {
+        String lunchPeriod;
 
-
+        if (gradeLevel == 9) {
+            lunchPeriod = "First Lunch";
+            System.out.print("This student has");
+            System.out.println(lunchPeriod);
+        } else if (gradeLevel == 10) {
+            lunchPeriod = "Second Lunch";
+            System.out.print("This student has");
+            System.out.println(lunchPeriod);
+        } else if (gradeLevel == 11) {
+            lunchPeriod = "Second Lunch";
+            System.out.print("This student has");
+            System.out.println(lunchPeriod);
+        } else (gradeLevel == 12) {
+            lunchPeriod = "Third Lunch";
+            System.out.print("This student has");
+            System.out.println(lunchPeriod);
+    }
 
     public static void main(String[] args) {
         Student student0 = new Student();
