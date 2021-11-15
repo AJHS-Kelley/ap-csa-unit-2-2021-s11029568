@@ -103,19 +103,19 @@ public class Student {
         // !  = NOT
 
         if (gradeLevel == 9 || gradePointAvg <= 1.5) {
-            lunchPeriod = "First Lunch";
+            lunchPeriod = " First Lunch";
             System.out.print("This student has");
             System.out.println(lunchPeriod);
         } else if (gradeLevel == 10 && gradePointAvg > 2.0) {
-            lunchPeriod = "Second Lunch";
+            lunchPeriod = " Second Lunch";
             System.out.print("This student has");
             System.out.println(lunchPeriod);
         } else if (gradeLevel == 11 && (gradePointAvg != 0.0)) {
-            lunchPeriod = "Second Lunch";
+            lunchPeriod = " Third Lunch";
             System.out.print("This student has");
             System.out.println(lunchPeriod);
         } else {
-            lunchPeriod = "Third Lunch";
+            lunchPeriod = " Off Campus Lunch";
             System.out.print("This student has");
             System.out.println(lunchPeriod);
         }
@@ -130,7 +130,7 @@ public class Student {
         System.out.println("General Kenobi");
         calcGPA();
         assignlunch(9);
-
+        assignlunchmultiple(11,3.3);
     }
 }
 
