@@ -13,7 +13,7 @@ public class Student {
 
     // Creating a Constructor
     public Student() {
-        this.studentID = 0:
+        this.studentID = 0;
         this.gradeLevel = 0;
         this.gradePointAvg = 0.0;
         this.studentName = "";
@@ -28,45 +28,42 @@ public class Student {
     }
 
     public Student(int studentID, String studentName) {
-        this.studentID =
+        this.studentID = studentID;
+        this.studentName = studentName;
+        this.gradeLevel = 9;
+        this.gradePointAvg = 4.0;
     }
 
+    //Creating Methods
+
+    public static void calcGPA() {
+        int grade0;
+        int grade1;
+        int grade2;
+        int grade3;
+        double newGPA;
 
 
+        Scanner myScanner = new Scanner(System.in);
 
+        System.out.println("What is the first grade?");
+        grade0 = myScanner.nextInt();
+        System.out.println("What is the second grade?");
+        grade1 = myScanner.nextInt();
+        System.out.println("What is the third grade?");
+        grade2 = myScanner.nextInt();
+        System.out.println("What is the fourth grade?");
+        grade3 = myScanner.nextInt();
 
+        newGPA = (grade0 + grade1 + grade2 + grade3) / 4;
+        System.out.print("The new GPA is");
+        System.out.println(newGPA);
+    }
 
+    public static void newLine() {
+        System.out.println();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 
     public static void threeLine() {
         newLine();
@@ -92,18 +89,24 @@ public class Student {
             lunchPeriod = "Second Lunch";
             System.out.print("This student has");
             System.out.println(lunchPeriod);
-        } else (gradeLevel == 12) {
+        } else {
             lunchPeriod = "Third Lunch";
             System.out.print("This student has");
             System.out.println(lunchPeriod);
+        }
     }
 
     public static void main(String[] args) {
         Student student0 = new Student();
-        Student student1 = new Student(12345678, 11, 0.57 "Dr. Strange");
+        Student student1 = new Student(12345678, 11, 0.57, "Dr. Strange");
 
         System.out.println("Hello there!");
-        threeline();
+        threeLine();
         System.out.println("General Kenobi");
         calcGPA();
+        assignlunch(9);
+
     }
+}
+
+    
