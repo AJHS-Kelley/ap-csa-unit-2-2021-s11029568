@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Unit 2, Topic 2.1, Classes and Objects, 11/03/21
+// Unit 2, Topic 2.1, Classes and Objects, 11/19/21, 8:23 AM
 
 
 public class Student {
@@ -60,38 +60,25 @@ public class Student {
         System.out.println(newGPA);
     }
 
-    public static void newLine() {
-        System.out.println();
-
-    }
-
-    public static void threeLine() {
-        newLine();
-        newLine();
-        newLine();
-    }
-
-
-
     //Parameters and arguments
     public static void assignlunch(int gradeLevel) {
         String lunchPeriod;
 
         if (gradeLevel == 9) {
             lunchPeriod = "First Lunch";
-            System.out.print("This student has");
+            System.out.print("This student has ");
             System.out.println(lunchPeriod);
         } else if (gradeLevel == 10) {
             lunchPeriod = "Second Lunch";
-            System.out.print("This student has");
+            System.out.print("This student has ");
             System.out.println(lunchPeriod);
         } else if (gradeLevel == 11) {
             lunchPeriod = "Second Lunch";
-            System.out.print("This student has");
+            System.out.print("This student has ");
             System.out.println(lunchPeriod);
         } else {
             lunchPeriod = "Third Lunch";
-            System.out.print("This student has");
+            System.out.print("This student has ");
             System.out.println(lunchPeriod);
         }
     }
@@ -103,30 +90,35 @@ public class Student {
         // !  = NOT
 
         if (gradeLevel == 9 || gradePointAvg <= 1.5) {
-            lunchPeriod = " First Lunch";
-            System.out.print("This student has");
+            lunchPeriod = "First Lunch";
+            System.out.print("This student has ");
             System.out.println(lunchPeriod);
         } else if (gradeLevel == 10 && gradePointAvg > 2.0) {
             lunchPeriod = " Second Lunch";
-            System.out.print("This student has");
+            System.out.print("This student has ");
             System.out.println(lunchPeriod);
         } else if (gradeLevel == 11 && (gradePointAvg != 0.0)) {
             lunchPeriod = " Third Lunch";
-            System.out.print("This student has");
+            System.out.print("This student has ");
             System.out.println(lunchPeriod);
         } else {
             lunchPeriod = " Off Campus Lunch";
-            System.out.print("This student has");
+            System.out.print("This student has ");
             System.out.println(lunchPeriod);
         }
     }
+
+    public static void mathPractice() {
+
+    }
+
+
 
     public static void main(String[] args) {
         Student student0 = new Student();
         Student student1 = new Student(12345678, 11, 0.57, "Dr. Strange");
 
         System.out.println("Hello there!");
-        threeLine();
         System.out.println("General Kenobi");
         calcGPA();
         assignlunch(9);
