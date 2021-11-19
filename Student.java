@@ -121,6 +121,31 @@ public class Student {
         int lowest;
         lowest = Math.min(x, y);
         System.out.println(lowest);
+
+        System.out.println("Next we will use Math.pow() to calculate.\n");
+        System.out.println(Math.pow(x, y));
+
+        double exponents;
+        exponents = Math.pow(x, y);
+        System.out.println(exponents);
+
+        System.out.println("Next we will use Math.radom(). \n");
+        System.out.println(Math.random());
+
+        double percentage;
+        percentage = (Math.random() * 100);
+        System.out.println("There is a");
+        System.out.print(percentage);
+        System.out.println("% chance of rain today. \n");
+
+        System.out.println("Now we will round a number");
+
+        double numbertoberounded;
+        System.out.print("Please enter a double value");
+        numbertoberounded = myScanner.nextDouble();
+        System.out.print(Math.round(numbertoberounded));
+    
+
     }
 
 
