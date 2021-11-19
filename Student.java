@@ -112,7 +112,9 @@ public class Student {
         int x = 62;
         int y = 28;
         Scanner myScanner = new Scanner(System.in);
+        System.out.println("Type an integer and press enter.\n");
         x = myScanner.nextInt();
+        System.out.println("Type an integer and press enter.\n");
         y = myScanner.nextInt();
         System.out.println(Math.min(x, y));
 
@@ -124,14 +126,7 @@ public class Student {
 
 
     public static void main(String[] args) {
-        Student student0 = new Student();
-        Student student1 = new Student(12345678, 11, 0.57, "Dr. Strange");
-
-        System.out.println("Hello there!");
-        System.out.println("General Kenobi");
-        calcGPA();
-        assignlunch(9);
-        assignlunchmultiple(11,3.3);
+        mathPractice();
     }
 }
 
