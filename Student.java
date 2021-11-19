@@ -109,7 +109,16 @@ public class Student {
     }
 
     public static void mathPractice() {
+        int x = 62;
+        int y = 28;
+        Scanner myScanner = new Scanner(System.in);
+        x = myScanner.nextInt();
+        y = myScanner.nextInt();
+        System.out.println(Math.min(x, y));
 
+        int lowest;
+        lowest = Math.min(x, y);
+        System.out.println(lowest);
     }
 
 
