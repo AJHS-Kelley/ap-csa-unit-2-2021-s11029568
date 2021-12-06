@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Unit 2, Topic 2.1, Classes and Objects, 12/06/21, 8:34 AM v6.5
+// Unit 2, Topic 2.1, Classes and Objects, 12/06/21, 8:34 AM v7.0
 
 
 public class Student {
@@ -158,10 +158,21 @@ public class Student {
         double fakeGPA;
         fakeGPA = (grade0 + grade1 + grade2) / 3;
 
+        return fakeGPA;
+
     }
 
     public static void main(String[] args) {
-        mathPractice();
+        //mathPractice();
+
+
+        double realGPA;
+        realGPA = -1.0;
+        System.out.println(realGPA);
+        realGPA = getGPA();
+        System.out.println(realGPA);
+
+
     }
 }
 
