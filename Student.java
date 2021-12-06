@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Unit 2, Topic 2.1, Classes and Objects, 11/19/21, 8:23 AM
+// Unit 2, Topic 2.1, Classes and Objects, 12/06/21, 8:34 AM v6.5
 
 
 public class Student {
@@ -129,7 +129,7 @@ public class Student {
         exponents = Math.pow(x, y);
         System.out.println(exponents);
 
-        System.out.println("Next we will use Math.radom(). \n");
+        System.out.println("Next we will use Math.random(). \n");
         System.out.println(Math.random());
 
         double percentage;
@@ -148,7 +148,17 @@ public class Student {
 
     }
 
+    public static double getGPA() {
+        int grade0, grade1, grade2;
 
+        grade0 = 75;
+        grade1 = 25;
+        grade2 = 100;
+
+        double fakeGPA;
+        fakeGPA = (grade0 + grade1 + grade2) / 3;
+
+    }
 
     public static void main(String[] args) {
         mathPractice();
